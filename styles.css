@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#title{
+    color: white;
+}
+header{
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(https://images.pexels.com/photos/1007657/pexels-photo-1007657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title{
+  text-shadow: 1px 1px 1px black;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+h1{
+  text-transform: uppercase;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+.sub{
+    text-shadow: 1px 1px 1px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1.2px solid silver;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sub:hover{
+    background-color: rgba(255, 255, 255, 0.836);
+    color: black;
+    text-shadow: none;
+    transition: 300ms ease-in;
+}
+.sub:active{
+    background-color: rgba(255, 255, 255, 0.392);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+section{
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 242px);
+    grid-template-rows: 3fr;
+    row-gap: 60px;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-around;
+}
+#paris{
+    background: url("https://images.pexels.com/photos/460740/pexels-photo-460740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#greece{
+    background: url("https://images.pexels.com/photos/772689/pexels-photo-772689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#tokyo{
+    background: url("https://images.pexels.com/photos/772937/pexels-photo-772937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.cities{
+    height: 290px;
+    width: 80%;
+}
+.images{
+    padding-top: 20px;
+}
+.cities::before{
+    content: "";
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.cities:hover::before{
+    height: inherit;
+    opacity: 1;
+    top: 0;
+    transition: 300ms ease-out;
+}
+.cities:hover .text{
+    top: 35%;
+    opacity: 1;
+    transition: 400ms ease-out;
+}
+.cities:hover button{
+    top: 80%;
+    opacity: 1;
+    transition: 400ms ease-out;
+}
+.text{
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    color: white;
+}
+h3{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    color: white;
+}
+button{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: white;
+    padding: 10px 40px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: 300ms ease-out;
+    cursor: pointer;
+}
+.div{
+    width: 95%;
+    height: 300px;
+    background: url("https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    grid-column: 1/4;
+}
+.info{
+    color: white;
+    margin: auto;
+    margin: 10px 0;
+    width: 100%;
+    background: linear-gradient(to right, rgb(15, 27, 27), rgb(7, 26, 31));
+}
+.main-div{
+    text-align: center;
+}
+h2{
+    padding: 20px;
+}
+.main-div p{
+    padding: 20px;
+}
+.rows{
+    width: 95vw;
+    height: 50vh;
+    margin: 0 auto;
+}
+#mountine{
+    background: url('https://images.pexels.com/photos/913215/pexels-photo-913215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#beach{
+    background: url('https://images.pexels.com/photos/2468773/pexels-photo-2468773.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#wf{
+    background: url('https://images.pexels.com/photos/2150347/pexels-photo-2150347.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#last{
+    background: url('https://images.pexels.com/photos/2695232/pexels-photo-2695232.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#imgs{
+    margin-top: 5px;
+}
+@media (max-width: 750px){
+.container{
+    margin: 0 auto;
+    display: flex;
+    align-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-around;
+    }
+.cities{
+    width: 190px;
+    }
+}
